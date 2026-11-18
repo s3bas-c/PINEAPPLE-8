@@ -1,4 +1,4 @@
-import p8_emulator.p8.config as config
+import config as config
 
 class Ram:
     """Random Access Memory (RAM) for runtime data storage"""

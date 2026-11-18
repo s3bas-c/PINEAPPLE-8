@@ -1,4 +1,4 @@
-import p8_emulator.p8.config as config
+import config as config
 
 '''
 DESC. - The register class is used to simulate general purpose registers

@@ -1,4 +1,4 @@
-import p8_emulator.p8.config as config
+import config as config
 
 '''
 DESC. the ALU holds all of the math in the computer, we call
@@ -46,7 +46,7 @@ class ALU:
             "Z": False,
             "C": False,
             "N": False,
-            "V": False,
+            "V": False
         }
 
         a = a & self.bit_mask
