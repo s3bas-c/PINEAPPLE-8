@@ -1,22 +1,25 @@
-# fibbonacci
+# FIBBONACCI SEQUENCE
+# A
+LDI reg1 0
+# B
+LDI reg2 1
 
-# incrementer and max
-LDI reg1 1
-LDI reg2 0
-LDI reg3 5
+# RESULT
+LDI reg3 0
 
-# fibbonacci starters
-LDI reg4 0
+# LOOP INITIALIZATION
 LDI reg5 1
 LDI reg6 0
 
-# loop
-ADD reg2 reg1 reg2
+# AMOUNT OF TIMES
+LDI reg7 8
 
-ADD reg6 reg4 reg5
-MOV reg4 reg5
-MOV reg5 reg6
-
-CMP reg2 reg3
-JMP JNZ 13
+# LOOP
+ADD reg6 reg6 reg5
+ADD reg3 reg1 reg2
+MOV reg1 reg2
+MOV reg2 reg3
+IO OUT reg3 PORT1
+CMP reg7 reg6
+JMP JNZ 6
 HLT

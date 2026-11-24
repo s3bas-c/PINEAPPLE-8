@@ -1,7 +1,7 @@
-import config as config
+import p8.config as config
 
 class Ram:
-    """Random Access Memory (RAM) for runtime data storage"""
+    """Random Access Memory (RAM) for runtime data storage7"""
     def __init__(self):
         self.bit_mask = (1 << config.RAM_BIT_WIDTH) - 1
         self.ram_cells = [0 for _ in range((1 << config.RAM_ADDR_WIDTH))]
